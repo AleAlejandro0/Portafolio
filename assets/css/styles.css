@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root{
+    
+    --Background-color: #1F1D2C;
+    --SeconBackground-color: #242635;
+    --FontColor-Attention: #F1A600;
+    --Font-Color: #E5E5E5; 
+    --SecondFont-Color: #FFFFFF;
+    --MainFont-Family: 'Inter', sans-serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: var(--Background-color);
+    color: var(--SecondFont-Color);
+    font-family: var(--MainFont-Family);
+    overflow-x: hidden;
+   
+}
+
+
+                      /*   NAVBAR STYLE */ 
+
+
+.nav{
+    background: var(--Background-color);
+    height: 70px;
+    color: white;
+    position: fixed;
+    right: 0rem;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.nav__logo{
+
+
+    font-size: 1.5em;
+    font-weight: 600; 
+
+}
+
+.nav_menu{
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav_item{
+
+    color: white;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    
+}
+
+.nav_item::after{
+
+    content: "";
+    display: block;
+    background: var(--FontColor-Attention);
+    width: 100%;
+    margin-top: 1px;
+    height: 1.5px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.5s;
+}
+
+.nav_item:hover{
+
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.nav_container{
+    
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav__label, .nav_input{
+ 
+  display: none;
+
+}
+
+               /*////// FIRST-SECTION STYLE /////*/
+
+
+
+ .tittle > h1{
+
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5rem;
+} 
+
+
+.tittle > p{
+
+
+    font-size: 32px;
+    text-align: left;
+    margin: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.nav-square{
+
+    position: relative;
+    max-width: 300px;
+    height: 300px;
+    background-color: var(--SeconBackground-color);
+    margin: 0 auto;
+    z-index: -1;
+}
+
+
+.container-photo{
+    border: 2px solid white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+   
+
+}
+
+
+
+.container-icons{
+
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+ }
+
+
+ .icons{
+
+    display: flex;
+    gap: 20px;
+
+ }
+
+
+span{
+     color: var(--FontColor-Attention);
+ }
+
+
+         /*///// SECOND-SECTION STYLE ////////*/
+
+ .second-conainer{
+    
+    background-color: var(--SeconBackground-color);
+    text-align: center;
+    padding: 2rem;
+
+ }
+
+h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 32px;
+}
+
+h2 + p{
+
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+ }
+
+h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 32px;
+}
+
+          /* //////   THIRD-SECTION STYLE ///////*/
+
+
+.third-section{
+ 
+    padding: 2rem;
+
+}
+
+
+.experience-Container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+}
+
+.distribution-thirdsection{
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 30%;
+
+}
+
+         /*/////////// FOURTH SECTION ////////////*/
+
+
+.fourth-section{
+     
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.container-spans{
+       
+    background-color: var(--SeconBackground-color);
+}
+
+.skills-text{
+
+    background-color: var(--Background-color);
+}
+
+
+.container-spans{
+
+     display: flex;
+     flex-direction: column;
+     align-items: end;
+     justify-content: space-between;
+}
+
+.span-size{
+    
+    font-size: 40px;
+    margin: 1rem 1rem;
+    font-weight: 600;
+
+}
+
+.skills-text{
+
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+    
+
+
+ /*/////////// FIFTH SECTION ////////////*/
+
+    
+
+.fifth-section > h2 {
+        
+   margin-top: 2.5rem;
+   margin-bottom: 4rem;
+}
+
+    
+.Container-Box-Left{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Container-Box-Right{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.left-projects{
+
+    width: 300px;
+    height: 200px;
+    background-color: var(--FontColor-Attention);
+    position: relative; 
+} 
+
+    
+.right-projects{
+    
+    width: 300px;
+    height: 200px;
+    background-color: var(--SeconBackground-color);
+    position: relative;
+       
+}
+    
+
+.frames-left{
+        
+    width: 280px;
+    height: 220px;
+    border: solid 3px #E5E5E5;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    
+} 
+
+.frames-right{
+
+    width: 280px;
+    height: 220px;
+    border: solid 3px #E5E5E5;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+}
+
+    
+.project-Description{
+        
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-weight: 600;
+        
+}
+
+
+/*/////// SIXTH SECTION STYLE //////*/
+
+
+.sixth-section{
+
+    background-color: var(--SeconBackground-color);
+}
+
+.sixth-section > h2{
+
+    padding-top: 2.5rem;
+}
+
+.contact-container  a{
+
+    color: var(--SecondFont-Color)
+}
+
+.phone-contact {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+
+.mail-contact{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding-bottom: 2rem;
+    gap: 0.3rem;
+}
+ 
+
+/*/////// FOOTER STYLE ///////*/ 
+
+
+footer{
+   
+    background-color: var(--Background-color);
+    height: 2rem;
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+ 
+                  /*//////     REPONSIVES STYLE         ///// */
+
+
+
+/* NAVBAR REPONSIVNES */ 
+
+ @media(max-width: 750px){
+     
+    .nav__label{
+
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+        position: fixed;
+        top: 0.2rem;
+        right: 2rem;
+
+    }
+
+    .nav_menu{
+
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: var(--SeconBackground-color);
+        width: 100%;
+        left: 0;
+        display: flex;
+        z-index: 1;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        transition: clip-path 1s;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .nav_input:checked + .nav_menu{
+        
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        }
+
+    .nav_container{
+
+        height: auto;
+        width: 100%;
+    }
+
+
+    .nav_menu {
+        top: 0px;
+    }
+}
+
+
+/* FIRST-SECTION / Responsive */
+
+
+@media(min-width: 1000px){
+
+    .tittle > p {
+    font-size: 32px;
+    text-align: left;
+    margin-left: 9rem;
+
+    }
+    
+}
+
+
+@media(max-width: 450px){
+
+    .container-photo{
+        border: 2px solid white;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 0.5rem;
+        top: 1rem;
+    }
+    
+}
+
+/* FOURTH SECTION Responsive */
+
+
+  @media screen and (max-width: 830px){
+
+    .skills-text{
+
+        font-size: 16px;
+        margin-top: 7rem;
+        width: 100%;
+    
+    }
+
+  }
+    
+
+/* FIFTH SECTION STYLE Reponsive */
+
+  
+@media screen and (min-width: 830px){
+    
+
+.left-projects{
+
+    width: 350px;
+    height: 250px;
+
+}
+
+
+.right-projects{
+
+    width: 350px;
+    height: 250px;
+
+}
+
+
+.frames-left{
+        
+    width: 330px;
+    height: 250px;
+    bottom: 2rem;
+    right: 4rem;
+ 
+}
+
+.frames-right{
+
+    width: 330px;
+    height: 250px;
+    bottom: 2rem;
+    left: 4rem;
+ 
+}
+
+
+
+.Container-Box-Left{
+
+    align-items: baseline;
+    position: relative;
+    left: calc( 50% - 350px)
+}
+
+.Container-Box-Right{
+
+    align-items: baseline;
+    position: relative;
+    left: calc( 50% )
+
+}
+
+}
+
+/*/////// SIXTH SECTION STYLE reponsive //////*/
+
+@media screen and (min-width: 830px){ 
+
+
+    .contact-container{
+
+        font-size: 20px;
+    }
+     
+    .phone-contact {
+
+        margin-right: 15vw;
+        margin-top: 3rem;
+
+    }
+    
+    
+    .mail-contact{
+    
+        margin-left: 15vw;
+
+    }
+
+    .contact-container img{
+             
+        width: 65px;
+
+    }
+    
+}
+
