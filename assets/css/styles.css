@@ -109,7 +109,7 @@ body{
 
     text-align: center;
     font-size: 50px;
-    margin-top: 5rem;
+    margin-top: 8rem;
 } 
 
 
@@ -418,6 +418,7 @@ footer{
     
     .nav{
     background: none;
+    box-shadow: none;
     }
 
     .nav__label{
@@ -466,6 +467,11 @@ footer{
     .nav_menu {
         top: 0px;
     }
+
+
+    .tittle > h1{
+        margin-top: 5rem;
+    } 
 }
 
 
