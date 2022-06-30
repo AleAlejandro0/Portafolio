@@ -40,6 +40,7 @@ body{
     top: 0;
     width: 100%;
     z-index: 50;
+    box-shadow: 0 1px 10px 0px #a3a1a1;
 }
 
 .nav__logo{
@@ -413,16 +414,20 @@ footer{
 
 /* NAVBAR REPONSIVNES */ 
 
- @media(max-width: 750px){
-     
+@media(max-width: 750px){
+    
+    .nav{
+    background: none;
+    }
+
     .nav__label{
 
-        display: block;
+        display: inline-block;
         cursor: pointer;
         z-index: 5;
-        position: fixed;
-        top: 0.2rem;
-        right: 2rem;
+        position: absolute;
+        top: 0.1rem;
+        right: 0rem;
 
     }
 
