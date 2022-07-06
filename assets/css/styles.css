@@ -103,6 +103,10 @@ body{
 
                /*////// FIRST-SECTION STYLE /////*/
 
+.first-section{
+    padding-top: 20px;
+}
+
 
 
  .tittle > h1{
@@ -171,6 +175,10 @@ span{
 
          /*///// SECOND-SECTION STYLE ////////*/
 
+.second-section{
+   padding-top: 80px;
+}
+
  .second-conainer{
     
     background-color: var(--SeconBackground-color);
@@ -203,8 +211,9 @@ h2{
 
 
 .third-section{
- 
-    padding: 2rem;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
 
 }
 
@@ -234,6 +243,7 @@ h2{
      
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 80px;
 
 }
 
@@ -279,7 +289,10 @@ h2{
 
  /*/////////// FIFTH SECTION ////////////*/
 
-    
+ .fifth-section{
+   padding-top: 80px;
+ }
+
 
 .fifth-section > h2 {
         
