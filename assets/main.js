@@ -20,8 +20,6 @@ for(let option of navOptions){
 
 let btn = document.getElementsByClassName("btn__portfolio")
 
-console.log(btn)
-
 btn[0].addEventListener("click", () => {
-  window.location.hash = "nav-portfolio";
+ window.location.hash = "nav-portfolio" 
 })
