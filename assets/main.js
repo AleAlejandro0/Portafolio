@@ -15,11 +15,3 @@ for(let option of navOptions){
   option.addEventListener("click", () => {
   menuOverlay.classList.toggle("show")})
 }
-
-//JUMP TO PORTFOLIO
-
-let btn = document.getElementsByClassName("btn__portfolio")
-
-btn[0].addEventListener("click", () => {
- window.location.hash = "nav-portfolio" 
-})

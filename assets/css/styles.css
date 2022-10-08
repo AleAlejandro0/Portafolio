@@ -43,9 +43,9 @@ body{
   gap: 3em;
 }
 .nav_item{
-  color: white;
-  text-decoration: none;
-  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+ color: white;
+ text-decoration: none;
+ --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 .nav_item::after{
   content: "";
@@ -78,67 +78,71 @@ body{
   padding-top: 10px;
 }
 .tittle > h1{
-  text-align: center;
-  font-size: 50px;
-  margin-top: 8rem;
+ text-align: center;
+ font-size: 50px;
+ margin-top: 8rem;
 } 
 .tittle > p{
-  font-size: 32px;
-  text-align: left;
-  margin: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  max-width: 80%;
+ font-size: 32px;
+ text-align: left;
+ margin: 2rem;
+ margin-top: 4rem;
+ margin-bottom: 4rem;
+ max-width: 80%;
 }
 .nav-square{
-  position: relative;
-  max-width: 300px;
-  height: 300px;
-  background-color: var(--SeconBackground-color);
-  margin: 0 auto;
-  z-index: -1;
+ position: relative;
+ max-width: 300px;
+ height: 300px;
+ background-color: var(--SeconBackground-color);
+ margin: 0 auto;
+ z-index: -1;
 }
 .container-photo{
-  border: 2px solid white;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  right: 3rem;
-  top: 3rem;
-  background-image: url('/assets/utilities/images/photo.jpg');
-  background-size: cover;
+ border: 2px solid white;
+ width: 300px;
+ height: 300px;
+ position: absolute;
+ right: 3rem;
+ top: 3rem;
+ background-image: url('/assets/utilities/images/photo.jpg');
+ background-size: cover;
 }
 .photo{
  width: 100%;
 }
 .btn__container{
-  display: flex;
-  justify-content: center;
-  margin: 7rem;
-  border: none;
-  height: 30px;
-  transition: transform 400ms ease; 
+ display: flex;
+ justify-content: center;
+ margin: 7rem;
+ border: none;
+ height: 30px;
+ transition: transform 400ms ease; 
 }
 .btn__container:hover{
  transform: scale(1.05);
  transition: transform 300ms ease;
 }
 .btn__portfolio{
-  border: none;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-family: var(--MainFont-Family);
-  background-color: var(--FontColor-Attention);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 1px 1px 10px rgb(110, 106, 106);
+ border: none;
+ padding: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 15px;
+ font-family: var(--MainFont-Family);
+ background-color: var(--FontColor-Attention);
+ color: white;
+ font-weight: 600;
+ cursor: pointer;
+ box-shadow: 1px 1px 10px rgb(110, 106, 106);
+}
+.link__porfolio{
+ text-decoration: none;
+ color: white;
 }
 span{
-  color: var(--FontColor-Attention);
+ color: var(--FontColor-Attention);
 }
 
 /*///// ABOUT ME SECTION ////////*/
