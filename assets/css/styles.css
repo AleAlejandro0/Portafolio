@@ -37,6 +37,11 @@ body{
  font-size: 1.5em;
  font-weight: 600; 
 }
+.nav_img{
+ position: absolute;
+ margin-top: .5rem;
+ right: .5rem;
+}
 .nav_menu{
  display: grid;
  grid-auto-flow: column;
@@ -88,7 +93,7 @@ input[type='checkbox']{
 }
 input:checked[type='checkbox']{
  background: var(--FontColor-Attention);
- transition: all 5s ease;
+ transition: all .5s ease;
 }
 input[type='checkbox']::before{
  content: '';
@@ -104,6 +109,7 @@ input[type='checkbox']::before{
 }
 input:checked[type='checkbox']:before{
  left: 20px; 
+  transition: all .5s ease;
 }
 
 /*////// ALEJANDRO INTRODUCTION SECTION /////*/
