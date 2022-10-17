@@ -29,6 +29,5 @@ check.addEventListener('click', () => {
   }else{
     location.href = '/index.html'
   }
-
 })
 

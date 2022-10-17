@@ -246,6 +246,9 @@ h2{
 .container-spans{ 
   background-color: var(--SeconBackground-color);
 }
+.Skills{
+ font-size: 20px;
+}
 .skills-text{
   background-color: var(--Background-color);
   margin-top: 6rem;
