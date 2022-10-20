@@ -247,7 +247,7 @@ h2{
   background-color: var(--SeconBackground-color);
 }
 .Skills{
- font-size: 20px;
+ font-size: 32px;
 }
 .skills-text{
   background-color: var(--Background-color);
@@ -270,6 +270,7 @@ h2{
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 1rem;
+  gap: 1rem;
 }
 
  /*///////////  PORTFOLIO STYLE  ////////////*/
@@ -458,7 +459,7 @@ footer{
 @media(max-width: 450px){
 .tittle > p{
   font-size: 25px;
- }
+}
 .container-photo{
   border: 2px solid white;
   width: 300px;
@@ -466,14 +467,17 @@ footer{
   position: absolute;
   right: 0.5rem;
   top: 1rem;
- }   
+} 
+.Skills{
+  font-size: 20px
+}
 .skills-text{
-   margin-top: 6rem;
+   margin-top: 5rem;
    width: 180%;
- }
- .skills-text > p {
+}
+.skills-text > p{
   font-size: 18px;
- }
+}
 }
 @media(min-width: 520px) {
   .skills-text{
