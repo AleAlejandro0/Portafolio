@@ -342,6 +342,11 @@ h2{
  background-size: cover;
  background-repeat: no-repeat;
 }
+.fourth{
+ background-image: url('/assets/utilities/images/ecommerce.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
 
 /*/////// SIXTH SECTION STYLE //////*/
 
